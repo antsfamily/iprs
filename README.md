@@ -10,14 +10,15 @@ IPRS has many functions and features:
 + Simulation
     - point target
     - real scene
-+ Compression(Not Supported yet)
+    - CUDA acceleration(not support yet)
++ Compression(not support yet)
 + Imaging
     - Classical 
         * Range-Doppler
         * Chirp Scaling
     - Compressed Sensing based
     - Deep Learning based
-+ Detection and Tracking(Not Supported yet)
++ Detection and Tracking(not support yet)
 + Will be open source soon
 
 # How to use?
