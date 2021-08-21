@@ -34,7 +34,7 @@ plt.title('rect')
 plt.show()
 
 
-s = iprs.chirp(t, 2, 30)
+s = iprs.chirp(t, 50, 300)
 plt.figure
 plt.plot(t, s)
 plt.title('chirp')

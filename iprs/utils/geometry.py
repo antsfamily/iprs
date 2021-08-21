@@ -7,13 +7,15 @@
 
 
 from __future__ import division, print_function, absolute_import
-from scipy.misc import imread as scipyimread
-from scipy.misc import imsave as scipyimsave
 import numpy as np
 
 
+def linekb(x, k, b):
+    return x * k + b
+
+
 def isinpolygons(p, pg):
-    """
+    r"""
     p: point [2,N]
     pg: polygon [2, nP]
 

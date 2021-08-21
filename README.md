@@ -1,6 +1,6 @@
 # What is IPRS?
 
-Intelligent Processing of Radar Signal ( abbr. IPRS), is an outstanding tool for processing radar signals, which is written in python.
+Intelligent Processing of Radar Signal ( ab. IPRS), is an outstanding tool for processing radar signals, which is written in python.
 
 
 # Why use IPRS?
@@ -10,16 +10,16 @@ IPRS has many functions and features:
 + Simulation
     - point target
     - real scene
-    - CUDA acceleration(not support yet)
-+ Compression(not support yet)
+<!-- + Compression -->
++ Compression(Not Supported yet)
 + Imaging
-    - Classical 
+    - Classical
         * Range-Doppler
         * Chirp Scaling
     - Compressed Sensing based
     - Deep Learning based
-+ Detection and Tracking(not support yet)
-+ Will be open source soon
+<!-- + Detection and Tracking -->
++ Detection and Tracking(Not Supported yet)
 
 # How to use?
 
@@ -35,25 +35,31 @@ Python>=2.7
 Install `Python` and `pip` first, then install `numpy` , `matplotlib` using the following comands:
 
 ```bash
-pip install numpy matplotlib scipy Pillow h5py
+	# Python3
+	pip3 install -r requirements.txt
+
+	# Python2
+	pip2 install -r requirements.txt
+
+
 ```
 
-For compressed sensing sar imaging, you need to install [pycompsense](http://pythonhosted.org/pycompsense/index.html).
+`IPython` or `jupyter` (optional) can be installed by `` pip3 install ipython``.
 
-```bash
-sudo pip install Cython pycompsense
-```
-
-`IPython` or `jupyter` (optional) can be installed by `` pip3 install ipython`` .
 
 ### Install IPRS
 
-The installation of IPRS is very simple, just do as follows in a terminal(Ubuntu: `bash shell` (<kbd>Ctrl+Alt+T</kbd>), Windows: `cmd` or `powershell`).
+
+Now you can install ``iprs`` by command: ``pip install iprs``! 
+
+You can install it manually, the installation of ``iprs`` is very simple, just do as follows in a terminal(Ubuntu: `bash shell` (<kbd>Ctrl+Alt+T</kbd>), Windows: `cmd` or `powershell`).
 
 ```bash
 cd iprs
 python setup.py install
 ```
+
+Otherwise, you can just run ``install.sh`` (Ubuntu) or ``install.bat`` （Windows）to install iprs automatically.
 
 If you don't want to install, you can add the root directory of "iprs" into ``PYTHONPATH`` environment variable.
 
@@ -61,7 +67,7 @@ In Ubuntu:
 
 ```bash
 sudo gedit ~/.bashrc
-export PYTHONPATH=$PYTHONPATH:/mnt/d/ws/sci/radar/iprs
+export PYTHONPATH=$PYTHONPATH:yourpath_to_iprs
 ```
 In Windows:
 
@@ -72,30 +78,24 @@ set PYTHONPATH=yourpath_to_iprs;%PYTHONPATH%
 setx PYTHONPATH "yourpath_to_iprs;%PYTHONPATH%"
 ```
 
-<!-- ```bat
-:: temporary
-set PYTHONPATH=D:\ws\sci\radar\iprs;%PYTHONPATH%
-:: permanent
-setx PYTHONPATH "D:\ws\sci\radar\iprs;%PYTHONPATH%"
-``` -->
+## Uninstallation
 
-<!--
-or you can do this with GUI.
+- If you install IPRS by running ``install.sh`` or ``install.bat``, Just run ``uninstall.sh`` (Ubuntu) or ``uninstall.bat`` （Windows）to uninstall iprs automatically.
+- If you install IPRS by ``python setup.py install``, try ``pip uninstall iprs``.
+- If you install IPRS by adding a ``PYTHONPATH`` environment, just remove that path.
 
-Open the ``New system variable`` dialog box by the following steps:
 
-``Control Panel -> System -> Advanced system settings -> environment variable -> system variable -> New``
+# Todo
 
-Then input the name and value of new system variable:
+- if ``Ab`` is not small, the both sides along range footprint of the Central Point is not equal. The accuracy of calculation (Rnear, Rfar) is inaccurate, and will cause the target far from the actual value.
 
-![setting PYTHONPATH environment variable in Windows](./PYTHONPATH.png)
--->
+- along range footprint: ``ar_footprint(Wl, H, Lr, Ad)``
 
 # Problems and Solutions
 
 ## matplotlib
 
-For Ubuntu with Python3.5, if you get error when install:
+For Ubuntu with Python3.5, if you get error when install it:
 
 ```bash
 NotImplementedError: Surface.create_for_data: Not Implemented yet.

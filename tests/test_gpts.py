@@ -8,8 +8,8 @@
 import iprs
 
 
-sensor_name = 'DIY'
-acquis_name = 'DIY3'
+sensor_name = 'DIY4'
+acquis_name = 'DIY4'
 
 sarplat = iprs.SarPlat()
 sarplat.name = "sensor=" + sensor_name + "_acquisition=" + acquis_name
@@ -20,7 +20,7 @@ sarplat.printsp()
 
 SA = sarplat.acquisition['SceneArea']
 
-nTGs = 100
+nTGs = 3
 seed = 2018
 print("=========++++++++================")
 targets = iprs.gpts(SA, nTGs, seed=seed, verbose=True)
@@ -37,7 +37,7 @@ print(Sr)
 iprs.show_amplitude_phase(Sr)
 
 
-Sr_img, ta, tr = iprs.range_doppler(Sr, sarplat, verbose=False)
+Sr_img, ta, tr = iprs.rda(Sr, sarplat, verbose=False)
 
 # axismod = 'Image'
 # axismod = 'SceneAbsolute'
@@ -45,4 +45,4 @@ axismod = 'SceneRelative'
 title = 'Reconstructed Image using RD'
 # title = 'Reconstructed Image using omega-k'
 iprs.show_sarimage(
-    Sr_img, sarplat, axismod=axismod, Tilte=title, aspect=None)
+    Sr_img, sarplat, axismod=axismod, title=title, aspect=None)

@@ -12,9 +12,29 @@ from iprs.sarcfg.sarplat import *
 
 sarplat = SarPlat()
 # print(SR)
-sarplat.name = 'DIY3'
+sarplat.name = 'DIY4'
 sarplat.sensor = SENSORS[sarplat.name]
 sarplat.acquisition = ACQUISITION['DIY4']
 sarplat.params = None
 
 sarplat.printsp()
+
+
+# sarplat = SarPlat()
+# # print(SR)
+# sarplat.name = 'RADARSAT1'
+# sarplat.sensor = SENSORS[sarplat.name]
+# sarplat.acquisition = ACQUISITION['DIY4']
+# sarplat.params = None
+
+# sarplat.printsp()
+
+
+# sarplat = SarPlat()
+# # print(SR)
+# sarplat.name = 'RADARSAT2'
+# sarplat.sensor = SENSORS[sarplat.name]
+# sarplat.acquisition = ACQUISITION['DIY4']
+# sarplat.params = None
+
+# sarplat.printsp()
