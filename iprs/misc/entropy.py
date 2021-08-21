@@ -6,9 +6,6 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
-from scipy import signal
-
-from ..utils.log import *
 
 
 def shannon_entropy(X):

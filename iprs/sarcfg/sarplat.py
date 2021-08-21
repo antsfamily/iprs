@@ -8,8 +8,8 @@ from __future__ import division, print_function, absolute_import
 
 import numpy as np
 
+import logging
 from iprs.utils.const import *
-from iprs.utils.log import *
 from iprs.sharing.range_azimuth_beamwidth_footprint import azimuth_beamwidth, compute_range_beamwidth, cr_footprint, ar_footprint
 
 AirboneSatelliteHeightBoundary = 60e3  # 60 km

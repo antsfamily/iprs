@@ -12,7 +12,7 @@ import sys
 import pickle as pkl
 import scipy.io as scio
 import numpy as np
-from ..utils.log import *
+import logging
 
 
 def sarstore(sardata, sarplat, file):

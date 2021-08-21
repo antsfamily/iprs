@@ -8,12 +8,9 @@ from __future__ import division, print_function, absolute_import
 import numpy as np
 from numpy.fft import *
 
+import logging
 from ..utils.const import *
-from ..utils.log import *
 from ..misc import visual as vis
-
-from ..dsp import normalsignals as sig
-
 from .share import zeros_padding
 
 
@@ -112,7 +109,7 @@ def csa_adv(Sr, sarplat, zpadar=False, usesrc=True, rcmc=None, usedpc=True, verb
     ta = np.reshape(ta, (Na, 1))
     fr = np.reshape(fr, (Nr, 1))
     fa = np.reshape(fa, (Na, 1)) + fadc
-    print(fr.shape, fa.shape, ta.shape, tr.shape)
+    # print(fr.shape, fa.shape, ta.shape, tr.shape)
 
     # ==================Align to Zero Doppler Center in azimuth
     logging.info("---Align to zero Doppler Center(azimuth)...")

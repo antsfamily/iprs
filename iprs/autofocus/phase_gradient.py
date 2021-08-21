@@ -5,12 +5,11 @@
 # @Link    : http://iridescent.ink
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
+import logging
 import numpy as np
-from scipy import signal
-from progressbar import *
 
+from progressbar import *
 from iprs.utils.const import *
-from iprs.utils.log import *
 from iprs.utils.transform import db20
 from iprs.misc.mathops import prevpow2
 from iprs.dsp.fft import fft, ifft

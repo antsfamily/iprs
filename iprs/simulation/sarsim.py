@@ -8,8 +8,8 @@ from __future__ import division, print_function, absolute_import
 import numpy as np
 from numpy.fft import fft, fftshift, ifftshift, fft2, ifft, ifft2
 
+import logging
 from ..utils.const import *
-from ..utils.log import *
 
 from ..dsp.normalsignals import rect, chirp
 from ..dsp.noise import imnoise, matnoise

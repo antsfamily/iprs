@@ -6,13 +6,13 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
+import logging
 from iprs.dsp.fft import fft, ifft, fftfreq, padfft
 from iprs.dsp.convolution import cutfftconv1
 from iprs.dsp.correlation import cutfftcorr1
 from iprs.misc.mathops import nextpow2
 from iprs.misc.arrayops import cut
 from iprs.utils.const import *
-from iprs.utils.log import *
 
 
 def mfpc_throwaway(X, No, Nh, axis=0, mffdmod='way1', ftshift=False):

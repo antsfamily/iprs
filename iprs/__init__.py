@@ -7,7 +7,6 @@ from .utils.const import *
 from .utils.convert import str2list, str2num
 from .utils.io import savemat, loadmat
 from .utils.file import listxfile, pathjoin, fileparts
-from .utils.log import *
 
 
 from .utils.image import imread, imsave, imadjust, imadjustlog, histeq, imresize

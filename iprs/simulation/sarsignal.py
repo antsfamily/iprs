@@ -9,7 +9,7 @@ import numpy as np
 from numpy.fft import fft, fftshift, ifftshift
 
 from iprs.utils.const import *
-from iprs.utils.log import *
+import logging
 
 from iprs.dsp.normalsignals import rect
 

@@ -9,7 +9,7 @@ import numpy as np
 from scipy import signal
 
 from iprs.utils.const import *
-from iprs.utils.log import *
+import logging
 from iprs.misc import visual as vis
 from iprs.dsp.fft import fft, ifft, fftfreq
 import matplotlib.pyplot as plt

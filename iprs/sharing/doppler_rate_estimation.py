@@ -9,7 +9,7 @@ import numpy as np
 from numpy.fft import *
 
 from iprs.utils.const import *
-from iprs.utils.log import *
+import logging
 
 
 def dre_geo(Wl, Vr, R, Ar=0.):

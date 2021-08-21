@@ -7,8 +7,9 @@
 # @Note  :https://crisp.nus.edu.sg/ers/ers.html
 #
 
+import logging
 import numpy as np
-from iprs.utils.log import *
+
 
 def vga_gain_compensation(S, V, mod='linear', fact=1.0):
     r"""vga gain compensation

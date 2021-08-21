@@ -8,8 +8,8 @@
 from __future__ import division, print_function, absolute_import
 
 import numpy as np
-from iprs.utils.const import *
 from numpy.fft import *
+from iprs.utils.const import *
 import matplotlib.pyplot as plt
 
 

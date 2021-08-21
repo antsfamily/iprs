@@ -6,9 +6,9 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
-from ..utils.const import *
-from ..utils.log import *
+import logging
 
+from ..utils.const import *
 from .geometry import rectangle, disc
 from iprs.utils.image import imresize
 

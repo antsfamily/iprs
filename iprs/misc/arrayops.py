@@ -5,8 +5,8 @@
 # @Link    : http://iridescent.ink
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
+import logging
 import numpy as np
-from iprs.utils.log import *
 
 
 def cut(A, pos, axis=None):

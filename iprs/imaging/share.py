@@ -6,12 +6,10 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
-from scipy import signal
 
+import logging
 from ..utils.const import *
-from ..utils.log import *
 from ..misc import visual as vis
-
 from ..dsp import normalsignals as sig
 from iprs.dsp.fft import fft, ifft
 

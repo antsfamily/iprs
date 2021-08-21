@@ -7,13 +7,13 @@
 # @Note  :https://crisp.nus.edu.sg/ers/ers.html
 #
 
-import numpy as np
+import re
 import struct
 import codecs
 import copy
-import re
+import logging
+import numpy as np
 from progressbar import *
-from iprs.utils.log import *
 
 from iprs.products.utils import getnumber, splitfmt
 from iprs.products.record import readrcd, readrcd1item, printrcd

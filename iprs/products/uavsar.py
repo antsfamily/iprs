@@ -10,8 +10,8 @@
 import os
 import re
 import struct
+import logging
 import numpy as np
-from iprs.utils.log import *
 from iprs.products.ceos import decfmtfceos, read_ceos_sar_raw, read_ceos_sar_slc
 from iprs.products.record import readrcd1item
 

@@ -9,10 +9,10 @@
 
 import re
 import copy
+import logging
 import numpy as np
 from progressbar import *
 
-from iprs.utils.log import *
 from iprs.products.ceos import decfmtfceos
 from iprs.products.utils import splitfmt
 from iprs.products.record import readrcd, readrcd1item

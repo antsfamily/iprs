@@ -7,7 +7,7 @@
 
 import numpy as np
 import codecs
-from iprs.utils.log import *
+import logging
 
 
 def b2i(b, endian='<'):

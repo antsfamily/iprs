@@ -6,11 +6,11 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
-import matplotlib.pyplot as plt
 
+import logging
 from iprs.utils.const import *
-from iprs.utils.log import *
 from iprs.dsp.fft import fft, ifft
+import matplotlib.pyplot as plt
 
 
 def mda_sm(SI, Ka, Fsa, Nsar, fadr, Tpa, fadc, isplot=False):

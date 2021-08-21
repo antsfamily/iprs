@@ -6,9 +6,9 @@
 # @Version : $1.0$
 from __future__ import division, print_function, absolute_import
 import numpy as np
+import logging
 from iprs.dsp.fft import fft, ifft, fftfreq, padfft
 from iprs.utils.const import *
-from iprs.utils.log import *
 from iprs.misc.mathops import nextpow2
 from iprs.dsp.normalsignals import rect
 import matplotlib.pyplot as plt
